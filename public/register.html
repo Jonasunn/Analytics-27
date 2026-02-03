@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="/register.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>You won 🎉</h1>
+      <p>Please enter your details to claim the prize.</p>
+
+      <form id="regForm">
+        <input type="hidden" id="session_id" name="session_id" />
+        <input type="hidden" id="banner_id" name="banner_id" />
+
+        <label>
+          Name
+          <input id="name" name="name" type="text" autocomplete="name" required />
+        </label>
+
+        <label>
+          Email
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </label>
+
+        <label>
+          Phone number
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+        </label>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div id="msg" class="msg" aria-live="polite"></div>
+
+      <a id="continueLink" class="continue" href="#" rel="noopener noreferrer" style="display:none;">Continue</a>
+    </div>
+  </div>
+
+  <script src="/register.js"></script>
+</body>
+</html>
